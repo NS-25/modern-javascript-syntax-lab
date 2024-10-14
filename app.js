@@ -48,5 +48,37 @@ const myCarr = { ...carr };
 myCarr.model = "q7"
 
 // Your code here
-console.log(carr.model);
-console.log(myCarr.model);
+// console.log(carr.model);
+// console.log(myCarr.model);
+
+// Exercise-6
+// Create an object named userProfile. 
+const userProfile = {};
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+const propertyName = "username";
+const propertyAge = "age";
+const propertyEmail = "email"
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+userProfile[propertyName] = "George";
+userProfile[propertyAge] = 30;
+userProfile[propertyEmail] = "george@gmail.com";
+
+// Your code here
+console.log(userProfile);
+
+// Exercise-8
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+function sentence(noun, adjective) {
+  return `This ${noun} is ${adjective}.`;
+}
+
+
+console.log(sentence("cat", "white"));
