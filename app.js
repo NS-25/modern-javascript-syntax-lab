@@ -64,7 +64,7 @@ userProfile[propertyAge] = 30;
 userProfile[propertyEmail] = "george@gmail.com";
 
 // Your code here
-console.log(userProfile);
+// console.log(userProfile);
 
 // Exercise-8
 // Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
@@ -81,4 +81,74 @@ function sentence(noun, adjective) {
 }
 
 
-console.log(sentence("cat", "white"));
+// console.log(sentence("cat", "white"));
+
+
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+if (pizza === 'tasty') {
+  // console.log('yum');
+} else {
+  // console.log('yuck');
+}
+
+// Your code here
+let pizzaTernary = pizza === "tasty" ? "yum" : "yuck";
+// console.log(pizzaTernary);
+
+
+// const result1 = 'bar' && 'foo';
+// const result2 = false || 243;
+// const result3 = 42 && false;
+// const result4 = undefined || 3000;
+
+// console.log('result1:', result1);
+// console.log('result2:', result2);
+// console.log('result3:', result3);
+// console.log('result4:', result4);
+// Exercise-10
+// 1. SET LANGUAGE
+
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
+
+// a. Create a variable called LANG
+const LANG = 'en';
+// b. Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+const result = localLangConfig || LANG;
+
+// Log the result
+console.log('Language setting:', LANG);
+///////////////////////////////////
+// 2. SET WEBSITE THEME
+
+const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it null
+
+// a. Create a variable called USER_THEME
+const USER_THEME = "light";
+// b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
+
+// Your code here
+const theme = userSavedTheme || USER_THEME;
+
+// Log the result
+console.log('User theme setting:', USER_THEME);
+///////////////////////
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+//
+
+/// Exercise-11
+const adventurer = {
+  name: 'Alice',
+};
+
+let cat = adventurer.cat?.name; // Your code here
+
+console.log(cat);
